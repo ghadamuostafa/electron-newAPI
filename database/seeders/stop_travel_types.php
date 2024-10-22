@@ -15,10 +15,6 @@ class stop_travel_types extends Seeder
     public function run()
     {
         //
-<<<<<<< Updated upstream
-=======
 
-
->>>>>>> Stashed changes
     }
 }
