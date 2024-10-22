@@ -27,11 +27,12 @@ Route::get('/', function () {
 
     return view('welcome');
 });
-
 <<<<<<< Updated upstream
-   Route::get('/nationalities', [NationalityController::class, 'index'])->name('nationalities.index');
+
+      Route::get('/nationalities', [NationalityController::class, 'index'])->name('nationalities.index');
 =======
-  Route::get('/nationalities', [NationalityController::class, 'index'])->name('nationalities.index');
+Route::get('/nationalities', [NationalityController::class, 'index'])->name('nationalities.index');
+Route::get('/nationalities', [NationalityController::class, 'index'])->name('nationalities.index');
 >>>>>>> Stashed changes
 Route::delete('/nationalities/{nationality}', [NationalityController::class, 'destroy'])->name('nationalities.destroy');
 Route::get('/nationalities/{id}', [NationalityController::class, 'show']);
@@ -48,4 +49,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
