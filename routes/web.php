@@ -27,13 +27,10 @@ Route::get('/', function () {
 
     return view('welcome');
 });
-<<<<<<< Updated upstream
 
-      Route::get('/nationalities', [NationalityController::class, 'index'])->name('nationalities.index');
-=======
 Route::get('/nationalities', [NationalityController::class, 'index'])->name('nationalities.index');
 Route::get('/nationalities', [NationalityController::class, 'index'])->name('nationalities.index');
->>>>>>> Stashed changes
+Route::get('/nationalities', [NationalityController::class, 'index'])->name('nationalities.index');
 Route::delete('/nationalities/{nationality}', [NationalityController::class, 'destroy'])->name('nationalities.destroy');
 Route::get('/nationalities/{id}', [NationalityController::class, 'show']);
 Route::put('/nationalities/{id}', [NationalityController::class, 'update'])->name('nationalities.update');
