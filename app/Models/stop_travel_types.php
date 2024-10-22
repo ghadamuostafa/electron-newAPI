@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class stop_travel_types extends Model
 {
     use HasFactory;
+
 }
